@@ -1,0 +1,8 @@
+<div class="card" [class.flipped]="card.flipped" (click)="flipCard(card)">
+	<div class="back">
+		{{card.value}}
+	</div>
+	<div class="front" >
+		<div class="front-inner"></div>
+	</div>
+</div>

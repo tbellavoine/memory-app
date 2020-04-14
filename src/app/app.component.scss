@@ -1,0 +1,17 @@
+h2 {
+	position:relative;
+	color:#feb960;
+	text-align: center;
+	margin: 20px;
+	padding-bottom:20px;
+	&:after{
+		content:"";
+		position:absolute;
+		display:block;
+		top:100%;
+		left:50%;
+		width:300px;
+		margin-left:-150px;
+		border-bottom:1px solid #feb960;
+	}
+}
