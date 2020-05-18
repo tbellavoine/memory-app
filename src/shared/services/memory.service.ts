@@ -50,6 +50,16 @@ export class MemoryService {
     });
   }
 
+  restartMemory(){
+    this.gameOver = false;
+    this.memoryCards = [];
+    this.flippedCards = 0;
+    this.nbClicks = 0;
+    this.cards.map((card)=> {
+      card.flipped = false;
+    });
+  }
+
   flipCard(card: Card){
     if (!card.flipped && this.memoryCards.length < 2){
       if (this.memoryCards.length === 0) {

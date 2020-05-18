@@ -17,7 +17,7 @@ export class ScoreboardComponent implements OnInit {
   }
 
   restartGame(){
-    this.memoryService.initMemory();
+    this.memoryService.restartMemory();
   }
 
 }
